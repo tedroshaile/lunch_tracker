@@ -17,7 +17,7 @@
     <td><%= meal.restaurant %></td>
     <td><%= meal.cuisine %></td>
     <td><%= meal.calories %></td>
-    <td><%= meal.price %></td>
+    <td><%= "$#{meal.price}" %></td>
     <td><%= meal.date_eaten %></td>
     <td><%= link_to 'Show', meal %></td>
     <td><%= link_to 'Edit', edit_meal_path(meal) %></td>
