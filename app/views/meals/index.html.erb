@@ -1,0 +1,31 @@
+<h1>Listing meals</h1>
+
+<table>
+  <tr>
+    <th>Restaurant</th>
+    <th>Cuisine</th>
+    <th>Calories</th>
+    <th>Price</th>
+    <th>Date eaten</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @meals.each do |meal| %>
+  <tr>
+    <td><%= meal.restaurant %></td>
+    <td><%= meal.cuisine %></td>
+    <td><%= meal.calories %></td>
+    <td><%= meal.price %></td>
+    <td><%= meal.date_eaten %></td>
+    <td><%= link_to 'Show', meal %></td>
+    <td><%= link_to 'Edit', edit_meal_path(meal) %></td>
+    <td><%= link_to 'Destroy', meal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Meal', new_meal_path %>

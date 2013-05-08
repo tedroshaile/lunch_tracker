@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  restaurant: MyText
+  cuisine: MyText
+  calories: 1
+  price: 1.5
+  date_eaten: 2013-05-08
+
+two:
+  restaurant: MyText
+  cuisine: MyText
+  calories: 1
+  price: 1.5
+  date_eaten: 2013-05-08
